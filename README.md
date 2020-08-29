@@ -1,4 +1,4 @@
-# @adobe/redux-saga-promise
+# @adobe/redux-saga-promise with redux-act support
 
 Simple clean utility to define actions that return promises, for use with [redux-saga](https://redux-saga.js.org)
 

@@ -13,7 +13,7 @@ governing permissions and limitations under the License.
 import 'regenerator-runtime/runtime' // eslint-disable-line node/no-unpublished-import
 import { applyMiddleware, createStore }           from 'redux' // eslint-disable-line node/no-extraneous-import
 import { call, put, putResolve, take, takeEvery } from 'redux-saga/effects'
-import { createAction, handleActions }            from 'redux-actions'
+import { createAction, createReducer }            from 'redux-act'
 import createSagaMiddleware                       from 'redux-saga'
 import isEqual                                    from 'lodash/isEqual'
 import test                                       from 'ava' // eslint-disable-line node/no-unpublished-import
@@ -91,10 +91,10 @@ function setup (saga, { withMiddleware = true } = {}) {
   //
   // Define a reducer that records the payloads of each phase
   //
-  const reducer = handleActions({
-    [promiseAction.trigger]:  (state, { payload }) => ({ ...state, trigger: payload }),
-    [promiseAction.resolved]: (state, { payload }) => ({ ...state, resolved: payload }),
-    [promiseAction.rejected]: (state, { payload }) => ({ ...state, rejected: payload }),
+  const reducer = createReducer({
+    [promiseAction.trigger]:  (state, payload) => ({ ...state, trigger: payload }),
+    [promiseAction.resolved]: (state, payload) => ({ ...state, resolved: payload }),
+    [promiseAction.rejected]: (state, payload) => ({ ...state, rejected: payload }),
   }, {})
 
   //

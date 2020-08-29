@@ -11,7 +11,7 @@ governing permissions and limitations under the License.
 */
 
 import { call, put, putResolve } from 'redux-saga/effects'
-import { createAction }          from 'redux-actions'
+import { createAction }          from 'redux-act'
 import isFunction                from 'lodash/isFunction'
 import merge                     from 'lodash/merge'
 
