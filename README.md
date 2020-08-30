@@ -23,7 +23,7 @@ These are described in detail below.
 As usual, install via:
 
 ```
-npm install @adobe/redux-saga-promise
+npm install redux-act-saga-promise
 ```
 
 # Usage
