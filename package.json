@@ -1,7 +1,7 @@
 {
-  "name": "@adobe/redux-saga-promise",
-  "version": "1.1.0",
-  "description": "Create actions that return promises, which are resolved/rejected by a redux saga",
+  "name": "@mdt/redux-saga-promise",
+  "version": "1.0.0",
+  "description": "redux-saga-promise with redux-act support",
   "main": "dist/index.js",
   "scripts": {
     "build": "npx babel src --out-dir dist",
@@ -17,7 +17,7 @@
     "resolve",
     "reject"
   ],
-  "author": "Ronen Barzel <ronen@barzel.org>",
+  "author": "Muhammed Tanrıkulu",
   "license": "Apache-2.0",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -47,10 +47,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adobe/redux-saga-promise.git"
+    "url": "git+https://github.com/mdtanrikulu/redux-saga-promise.git"
   },
   "bugs": {
-    "url": "https://github.com/adobe/redux-saga-promise/issues"
+    "url": "https://github.com/mdtanrikulu/redux-saga-promise/issues"
   },
-  "homepage": "https://github.com/adobe/redux-saga-promise#readme"
+  "homepage": "https://github.com/mdtanrikulu/redux-saga-promise#readme"
 }

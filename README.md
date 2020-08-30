@@ -1,4 +1,4 @@
-# @adobe/redux-saga-promise with redux-act support
+# redux-saga-promise with redux-act support
 
 Simple clean utility to define actions that return promises, for use with [redux-saga](https://redux-saga.js.org)
 
@@ -304,10 +304,6 @@ sagaMiddleware.run(rootSaga)
 ```
 
 Additionally, all the helper functions will throw a custom `Error` subclass `ConfigurationError` if `promiseMiddleware` was not properly included in the store.
-
-# Contributing
-
-Contributions are welcomed! Read the [Contributing Guide](./CONTRIBUTING.md) for more information.
 
 ### Building & Testing
 
