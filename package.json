@@ -1,5 +1,5 @@
 {
-  "name": "@mdt/redux-saga-promise",
+  "name": "redux-act-saga-promise",
   "version": "1.0.0",
   "description": "redux-saga-promise with redux-act support",
   "main": "dist/index.js",
